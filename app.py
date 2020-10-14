@@ -7,6 +7,7 @@ app.debug = 'DEBUG' in os.environ
 
 @app.route('/')
 def index():
+    return 'Hello, World!'
     return app.send_static_file('index.html')
 
 

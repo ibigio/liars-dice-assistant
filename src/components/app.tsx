@@ -3,7 +3,14 @@ import Die from './die-plain';
 // import styles from './app.module.css';
 
 export default function App() {
-  return <> <Die numPips={6} /> <Die numPips={6} /> <Die numPips={2} /> </>;
+  return (
+    <html>
+      <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+      </head>
+      <Die numPips={6} /> <Die numPips={6} /> <Die numPips={2} />
+    </html>
+  );
   //   <>
   //     <meta name="apple-mobile-web-app-capable" content="yes" />
   //     <div className={"App"}>
